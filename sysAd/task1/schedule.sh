@@ -1,6 +1,6 @@
 #!/bin/bash
 
-s = $(date -I) 
+s=$(date -I) 
 
 if [[ $(grep "$s" /home/future.txt) ]] ; then 
   echo “DATE    TIME”> /home/Jay_Jay/schedule.txt
