@@ -32,7 +32,7 @@ for k in {11..20};do
   usermod -a -G third_years webDev_$k
 done
 
-for l in {21..20};do
+for l in {21..30};do
   usermod -a -G fourth_years sysAd_$l
   usermod -a -G fourth_years appDev_$l
   usermod -a -G fourth_years webDev_$l
