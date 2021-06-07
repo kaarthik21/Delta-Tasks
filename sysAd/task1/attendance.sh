@@ -1,34 +1,34 @@
-echo “Do u want to input by dates? {y or n}” 
+echo “Do u want to input by dates?” 
 read char
 if [[ $char = y ]]; then
-	echo “Input two dates” 
-	read date1 
-	read date2
-	grep -hnr "$date1" /home/attendance.log > /home/attendance1.txt 
-	grep -hnr "$date2" /home/attendance.log > /home/attendance2.txt 
+	echo “Input two dates in yyyy-mm-dd” 
+	read -p "Enter date1: " date1
+	read -p "Enter date2: " date2
+	awk -v d1="$date1" -v d2="$date2" -F " - |, " '{if($2>=d1 && $2<=d2) print $0}' /home/attendance.log  > /home/attendance.txt
+
 	for i in {01..30} 
 	do
-		if grep -q sysAd_$i /home/attendance1.txt && grep -q sysAd_$i /home/attendance2.txt; then :
+		if grep -q sysAd_$i /home/attendance.txt; then :
 		else 
 		echo "sysAd_$i" >> /home/Jay_Jay/finalattendance.txt
 		fi
 	done
 	for j in {01..30} 
 	do
-		if grep -q webDev_$j /home/attendance1.txt && grep -q webDev_$j /home/attendance2.txt; then :
+		if grep -q webDev_$j /home/attendance.txt; then :
 		else 
 		echo "webDev_$j" >> /home/Jay_Jay/finalattendance.txt
 		fi
 	done
 	for k in {01..30}
 	do
-		if grep -q appDev_$k /home/attendance1.txt && grep -q appDev_$k /home/attendance2.txt; then :
+		if grep -q appDev_$k /home/attendance.txt; then :
 		else 
 		echo "appDev_$k" >> /home/Jay_Jay/finalattendance.txt
 		fi
 	done
 
-elif [[ $char=n ]]; then
+elif [[ $char = n ]]; then
 	s=$(date -I) 
 	awk '$5 <= "$s"' /home/attendance.log > /home/attendance.txt
 	awk -F"[, ]" '{print >> "temp_"$3".txt"}' /home/attendance.txt
@@ -67,3 +67,7 @@ elif [[ $char=n ]]; then
 
 			
 fi
+
+
+
+
