@@ -8,14 +8,6 @@ for i in {01..30};do
 done
 echo “Users generated”
 
-groupadd genUser
-
-for i in {01..30};do 
-  usermod -g genUser sysAd_$i
-  usermod -g genUser appDev_$i
-  usermod -g genUser webDev_$i
-done
-
 groupadd second_years_sysAd
 groupadd second_years_webDev
 groupadd second_years_appDev
