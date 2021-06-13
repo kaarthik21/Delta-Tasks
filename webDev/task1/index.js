@@ -216,6 +216,9 @@ let empty = gb.getEmptyCell();
 let pattern_board = document.getElementById("pattern_board");
 let pg = new RenderGrid2(smallgrid,40,pattern_board);
 let pb = new GameBoard2(pg);
+
+
+    
 function loop(time){
     delta_time += time-last_time;
     last_time = time;
@@ -226,15 +229,11 @@ function loop(time){
     }
     if(seconds>60)seconds = 0;
     minutes = timer/60 | 0;
-
-    function startgame(){
     timer_dom.innerHTML ="<span style = 'font-size:20px'>Timer: </span>" +
     (minutes<10?"0"+minutes:minutes)+":"+(seconds<10?"0"+seconds:seconds);
-    
-    document.getElementsById("startgame").style.display = "none";
 
-    }
 
+    //function newgame(){}
 
     //Rendering
     gb.render();
@@ -251,7 +250,6 @@ function loop(time){
         }
     }
 
-
     if(win){
         console.log("you win in "+minutes + " minutes and " +seconds + " seconds");
         document.getElementById("score").innerHTML ="<span style = 'font-size:20px'> Score : </span>" + Math.round((1/Math.sqrt(seconds) + 2/(moves^2))*1000);
@@ -265,6 +263,7 @@ function loop(time){
 requestAnimationFrame(loop);
 
 //Moving cells
+
 document.onkeydown = function(e){
     switch(e.which){
         case 37:
