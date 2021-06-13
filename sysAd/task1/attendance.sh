@@ -1,3 +1,5 @@
+cd /home
+
 echo “Do u want to input by dates?” 
 read char
 if [[ $char = y ]]; then
@@ -67,6 +69,8 @@ elif [[ $char = n ]]; then
 
 			
 fi
+
+cd -
 
 
 
