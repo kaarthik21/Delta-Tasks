@@ -9,7 +9,7 @@ done
 
 g=/home/temp/second/*
 for i in $g; do
-	grep "." $i | tail -1 >> /home/temp/lastsecondyear.txt
+	tail -1 $i >> /home/temp/lastsecondyear.txt
 done 
 cut -d " " -f1 /home/temp/lastsecondyear.txt >> /home/temp/withoutdate.txt
 
