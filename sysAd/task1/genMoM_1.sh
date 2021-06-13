@@ -11,7 +11,5 @@ g=/home/temp/second/*
 for i in $g; do
 	tail -1 $i >> /home/temp/lastsecondyear.txt
 done 
-cut -d " " -f1 /home/temp/lastsecondyear.txt >> /home/temp/withoutdate.txt
-
 
 awk -F "[, ]" '{print "Some random text..." >> "/home/"$1"/"$3"_mom"}' /home/temp/lastsecondyear.txt
