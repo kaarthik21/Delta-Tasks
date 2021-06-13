@@ -32,7 +32,7 @@ if [[ $char = y ]]; then
 
 elif [[ $char = n ]]; then
 	s=$(date -I) 
-	awk '$5 <= "$s"' /home/attendance.log > /home/attendance.txt
+	awk -v x="$s" '$5 <= x' /home/attendance.log > /home/attendance.txt
 	awk -F"[, ]" '{print >> "temp_"$3".txt"}' /home/attendance.txt
 	mkdir temp
 	mv /home/temp_* temp
