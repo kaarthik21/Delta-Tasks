@@ -4,4 +4,4 @@ Build it: docker build -t AlphaQ_server
 
 Run it:   docker run --name AlphaQ_server {image ID}
 
-# All .sh files are in /Delta-Tasks/sysAd/task1/ #
+(All .sh files are in /Delta-Tasks/sysAd/task1/ )
