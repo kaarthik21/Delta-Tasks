@@ -1,0 +1,5 @@
+#! /bin/sh
+
+FROM ubuntu
+COPY genUser.sh /genUser.sh
+CMD ["/genUser.sh"]
