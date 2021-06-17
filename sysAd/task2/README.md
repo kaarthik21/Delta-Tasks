@@ -2,4 +2,4 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 Build it: docker build -t AlphaQ_server
 
-Run it:   docker run --name AlphaQ_server <<image ID>>
+Run it:   docker run --name AlphaQ_server {image ID}
