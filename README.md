@@ -1,4 +1,4 @@
-Alpha Q Server Setup
+# Alpha Q Server Setup
 
 Welcome, SysAd. Alpha Q is shifting all it’s management tasks online! As a system administrator, you are tasked with setting up the basic system for the group. Your scripts should be named according to the alias given for each sub task.
 Normal Mode
