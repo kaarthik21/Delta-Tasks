@@ -17,8 +17,8 @@ RUN chmod +x /server/permit.sh
 RUN chmod +x /server/schedule.sh
 RUN chmod +x /server/attendance.sh
 
-CMD ["/bin/sh", "./genUser.sh", "./permit.sh"]
-
+RUN /server/genUser.sh
+RUN /server/permit.sh
 RUN /etc/cron.d/crontab-schedule.txt
 RUN /server/schedule.sh 
 RUN /server/attendance.sh
