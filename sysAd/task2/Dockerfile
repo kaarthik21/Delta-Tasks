@@ -9,7 +9,7 @@ WORKDIR /server
 COPY *.sh /server/
 COPY attendance.log future.txt /server/
 COPY crontab-schedule.txt /etc/cron.d/crontab-schedule.txt
-RUN cat .bashrc >> /root/.bashrc
+RUN cat .bashrc_server >> /root/.bashrc
 RUN chmod 0644 /etc/cron.d/crontab-schedule.txt
 
 RUN chmod +x /server/genUser.sh 
