@@ -2,8 +2,7 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 #### Build it: docker build -t alphaq_server .
 
-#### Run it:   docker run --name alphaq_server {image_ID}
-#### Explore docker file system: docker run -t -i {image_ID} /bin/bash
+#### Run, Explore docker file system: docker run -it {image_ID} /bin/bash
 
 
 (All .sh files are in /Delta-Tasks/sysAd/task1/ )
