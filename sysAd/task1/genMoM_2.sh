@@ -8,4 +8,4 @@ let x = 1
 while read p; do 
 awk -F "[, ]" '{if(NR==x) print $1, $3}' /home/temp/betweendates.txt >> /home/Jay_Jay/MoM.txt & awk -F "[, ]" '{if(NR==x) print "/home/"$1"/"$3"_mom"}' | xargs cat /home/temp/betweendates.txt >> /home/Jay_Jay/MoM.txt
 let x = x+1
-done > /home/temp/lastsecondyear.txt
+done < /home/temp/lastsecondyear.txt
