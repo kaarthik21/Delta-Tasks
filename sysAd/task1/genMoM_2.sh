@@ -1,4 +1,4 @@
-! /bin/sh
+#! /bin/sh
 
 read -p "Enter date 1: " date1
 read -p "Enter date 2: " date2
