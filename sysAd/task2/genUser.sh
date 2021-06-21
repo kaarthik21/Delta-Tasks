@@ -54,3 +54,5 @@ done
 for l in {21..30};do
   usermod -a -G fourth_years_appDev appDev_$l
 done
+
+echo "Added into groups"
