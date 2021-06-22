@@ -1,3 +1,5 @@
+#! bin/bash
+
 mkdir /home/temp/second
 f=/home/temp/temp_*
 
