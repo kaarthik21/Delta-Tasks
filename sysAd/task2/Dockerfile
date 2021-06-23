@@ -5,9 +5,11 @@ RUN apt-get install acl -y
 
 WORKDIR /server
 COPY *.sh /server/
+COPY bashrc_server /server/
 COPY attendance.log future.txt /server/
 COPY crontab-schedule.txt /var/spool/crontabs/crontab-schedule.txt
 
+RUN chmod 644 /server/bashrc_server
 RUN cat bashrc_server >> /root/.bashrc
 RUN chmod 644 /var/spool/crontabs/crontab-schedule.txt
 
