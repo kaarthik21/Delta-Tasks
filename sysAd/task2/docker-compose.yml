@@ -1,0 +1,10 @@
+services:
+  
+  web:
+    build: .
+
+  python:
+    image: python:latest
+
+  mysql:
+    image: mysql/mysql-server:latest 
