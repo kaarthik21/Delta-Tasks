@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN apt-get update && apt-get install cron -y && apt-get install vim -y
 RUN apt-get install acl -y && apt-get install python3 -y && apt-get install mysql-server -y
-RUN apt-get install python3-pip -y && pip install PyMySQL
+RUN apt-get install python3-pip -y && pip install PyMySQL -y && apt-get install phpmyadmin -y && apt-get install apache2 -y
 
 WORKDIR /server
 
