@@ -4,5 +4,8 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 #### Run, Explore docker file system: docker run -it {image_ID} /bin/bash
 
+#### Run from docker compose, docker-compose up
 
-(All .sh files are in /Delta-Tasks/sysAd/task1/ )
+#### Check on phpmyadmin, Go to browser and browse localhost/phpmyadmin
+
+(All .sh files are in /Delta-Tasks/sysAd/task2/ )
