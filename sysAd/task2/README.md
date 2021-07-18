@@ -5,7 +5,7 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 #### Run, Explore docker file system: docker run -it {image_ID} /bin/bash
 
 #### Run from docker compose, docker-compose up
-#### Login to mysql using root (mysql -u root) then build the docker
+#### Restart using </etc/init.d/mysql restart>
 
 #### Check on phpmyadmin, Go to browser and browse localhost/phpmyadmin
 
