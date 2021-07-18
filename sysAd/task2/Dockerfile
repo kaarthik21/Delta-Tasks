@@ -27,4 +27,4 @@ RUN /var/spool/crontabs/crontab-schedule.txt
 #RUN /server/schedule.sh
 #RUN /server/attendance.sh
 #RUN /server/Minutesofmeeting_database.py
-CMD "bash"
+CMD /etc/init.d/mysql start
