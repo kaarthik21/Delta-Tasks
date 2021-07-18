@@ -7,6 +7,8 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 #### Run from docker compose, docker-compose up
 #### Restart using </etc/init.d/mysql restart>
 
+#### mv /home/Jay_Jay/MoM.txt /var/lib/mysql-files/MoM.txt
+
 #### Check on phpmyadmin, Go to browser and browse localhost/phpmyadmin
 
 (All .sh files are in /Delta-Tasks/sysAd/task2/ )
