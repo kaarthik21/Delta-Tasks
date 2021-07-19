@@ -2,14 +2,14 @@
 import pymysql
 
 # Connect to the database
-connection = pymysql.connect(host='localhost', user='root', passwd='', db='Minutesofmeeting' )
+connection = pymysql.connect(host='localhost', user='root', passwd='root', db='Minutesofmeeting' )
 cursor=connection.cursor()
 
 # Drop table if already exists
 cursor.execute("DROP TABLE IF EXISTS MoM")
 
 # Create table
-cursor.execute("CREATE TABLE MoM(Minutes_of_meeting VARCHAR(200), Username VARCHAR(20), Date VARCHAR(20) )")
+cursor.execute("CREATE TABLE MoM(Username VARCHAR(20), Date VARCHAR(20), Minutes_of_meeting VARCHAR(200))")
 
 # Create a new record 
 cursor.execute("SET GLOBAL local_infile=1")
