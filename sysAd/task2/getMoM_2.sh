@@ -8,7 +8,7 @@ let x="1"
 while read line; do 
 a=$(awk -F "[, ]" -v x=$x 'NR==x{print $1, $3}' /home/temp/betweendates.txt) 
 b=$(awk -F "[, ]" -v x=$x 'NR==x{print "/home/"$1"/"$3"_mom"}' /home/temp/betweendates.txt | xargs cat) 
-echo $a $b
+echo $a $b >> /home/Jay_Jay/MoM.txt
 
 ((x++))
 done < /home/temp/lastsecondyear.txt
