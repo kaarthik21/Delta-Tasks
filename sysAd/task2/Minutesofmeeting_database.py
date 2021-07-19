@@ -13,7 +13,7 @@ cursor.execute("CREATE TABLE MoM(Username VARCHAR(20), Date VARCHAR(20), Minutes
 
 # Create a new record 
 cursor.execute("SET GLOBAL local_infile=1")
-insert_data = "LOAD DATA INFILE '/var/lib/mysql-files/MoM.txt' INTO TABLE MoM COLUMNS TERMINATED BY ' ' LINES TERMINATED BY '\n'"
+insert_data = "LOAD DATA INFILE '/var/lib/mysql-files/MoM.txt' INTO TABLE MoM COLUMNS TERMINATED BY '\t' LINES TERMINATED BY '\n'"
 cursor.execute(insert_data)
 
 # Connection is not autocommit by default. So we must commit to save our changes.
