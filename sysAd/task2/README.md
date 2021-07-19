@@ -8,7 +8,7 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 #### Start mysql using <service mysql start> or </etc/init.d/mysql start>
 
-#### Change password for mysql root by <ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword'>
+#### Change password for mysql root by <ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';>
 
 #### mv /home/Jay_Jay/MoM.txt /var/lib/mysql-files/MoM.txt
 
