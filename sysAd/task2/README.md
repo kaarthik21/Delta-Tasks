@@ -10,7 +10,7 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 #### Change password for mysql root by <ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';>
 
-#### mv /home/Jay_Jay/MoM.txt /var/lib/mysql-files/MoM.txt
+#### cp /home/Jay_Jay/MoM.txt /var/lib/mysql-files/MoM.txt
 
 #### Check on phpmyadmin, Go to browser and browse localhost/phpmyadmin
 
