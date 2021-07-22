@@ -11,6 +11,7 @@ COPY bashrc_server /server/
 COPY attendance.log future.txt /server/
 COPY crontab-schedule.txt /var/spool/crontabs/crontab-schedule.txt
 COPY Minutesofmeeting_database.py /server/
+COPY moms.php /server/moms.php
 
 RUN chmod 644 /server/bashrc_server
 RUN cat bashrc_server >> /root/.bashrc
@@ -20,6 +21,7 @@ RUN chmod +x /server/permit.sh
 RUN chmod +x /server/schedule.sh
 RUN chmod +x /server/attendance.sh
 RUN chmod +x /server/Minutesofmeeting_database.py
+RUN moms.php
 
 RUN /server/genUser.sh
 RUN /server/permit.sh
@@ -27,4 +29,6 @@ RUN /var/spool/crontabs/crontab-schedule.txt
 #RUN /server/schedule.sh
 #RUN /server/attendance.sh
 #RUN /server/Minutesofmeeting_database.py
+#RUN /server/moms.php
+
 CMD /etc/init.d/mysql start
