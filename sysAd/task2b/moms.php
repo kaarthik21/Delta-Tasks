@@ -6,7 +6,7 @@
 <body>
 
 <?php
-$mysqli = new mysqli("localhost","root","KAARTHIK2002","Minutesofmeeting");
+$mysqli = new mysqli("localhost","root","root","Minutesofmeeting");
 
 // Check connection
 if ($mysqli -> connect_errno) {
