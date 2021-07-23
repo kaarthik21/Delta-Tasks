@@ -21,7 +21,7 @@ RUN chmod +x /server/permit.sh
 RUN chmod +x /server/schedule.sh
 RUN chmod +x /server/attendance.sh
 RUN chmod +x /server/Minutesofmeeting_database.py
-RUN moms.php
+RUN chmod +x /server/moms.php
 
 RUN /server/genUser.sh
 RUN /server/permit.sh
