@@ -12,6 +12,8 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 #### cp /home/Jay_Jay/MoM.txt /var/lib/mysql-files/MoM.txt
 
+#### service apache2 start & service mysql start before using phpmyadmin
+
 #### Check on phpmyadmin, Go to browser and browse localhost/phpmyadmin
 
 (All .sh files are in /Delta-Tasks/sysAd/task2/ )
