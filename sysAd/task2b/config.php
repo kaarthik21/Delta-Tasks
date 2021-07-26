@@ -13,6 +13,11 @@ if(isset($_POST['sub'])){
 <html>
         <head>
                 <title>Login</title>
+                <style>
+                        body{
+                                background-color:lightblue;
+                                }
+                </style>
         </head>
         <body>
         <form name='input' action='<?php echo $_SERVER['PHP_SELF'];?>' method='POST'>
