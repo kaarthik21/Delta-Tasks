@@ -1,8 +1,9 @@
-<!DOCTYPE html>                                                                                                                                  
-<html>                                                                                                                                           
-<body>                                                                                                                                           
-                                                                                                                                                 
-<?php                                                                                                                                            
+<!DOCTYPE html>
+<html>
+<body>
+<title>moms.local</title>
+<h1>List of MoMs:</h1>
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "root";
