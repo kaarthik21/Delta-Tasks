@@ -25,11 +25,11 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 
 Build docker container 
-## docker build -t alphaq_server .
-## docker run -t -d –name alphaq_server alphaq_server /bin/bash
-## docker exec alphaq_server mysql ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
-## docker exec alphaq_server service mysql start
-## docker exec -it alphaq_server mysql -u root -p
+##### docker build -t alphaq_server .
+##### docker run -t -d –name alphaq_server alphaq_server /bin/bash
+##### docker exec alphaq_server mysql ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
+##### docker exec alphaq_server service mysql start
+##### docker exec -it alphaq_server mysql -u root -p
 (password given is ‘root’)
-## docker exec alphaq_server mysql create database Minutesofmeeting;
+##### docker exec alphaq_server mysql create database Minutesofmeeting;
 
