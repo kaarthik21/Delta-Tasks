@@ -1,10 +1,15 @@
 services:
-  
-  web:
-    build: .
 
-  python:
-    image: python:latest
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
 
   mysql:
-    image: mysql/mysql-server:latest 
+    image: mysql/mysql-server
+    restart: always
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'Minutesofmeeting'
+
