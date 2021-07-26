@@ -24,7 +24,7 @@ AlphaQ wants to shift operations to the new headquarters. But manually shifting 
 
 
 
-Build docker container 
+## Changing mysql root password and creating Minutesofmeeting database
 ##### docker build -t alphaq_server .
 ##### docker run -t -d –name alphaq_server alphaq_server /bin/bash
 ##### docker exec alphaq_server mysql ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
