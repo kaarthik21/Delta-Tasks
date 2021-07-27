@@ -11,11 +11,11 @@
 #### vim /etc/apache2/sites-available/000-default.conf
 ##
 #### Modify 000-default.conf file by adding these commands        
-#####        ServerAdmin admin@moms.local.com
-#####        ServerName www.moms.local.com
-#####        DocumentRoot /var/www/html/
-#####        ErrorLog ${APACHE_LOG_DIR}/moms.local_error.log
-#####        CustomLog ${APACHE_LOG_DIR}/moms.local_access.log combined
+##### ServerAdmin webmaster@localhost
+##### ServerName moms.local
+##### DocumentRoot /var/www/html/
+##### ErrorLog ${APACHE_LOG_DIR}/moms.local_error.log
+##### CustomLog ${APACHE_LOG_DIR}/moms.local_access.log combined
 ## 
 #### a2ensite /etc/apache2/sites-available/000-default.conf
 #### /etc/init.d/apache2 restart
