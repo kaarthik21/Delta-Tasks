@@ -30,6 +30,12 @@
 ##### docker exec alphaq_server mysql ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
 ##### docker exec alphaq_server service mysql start
 ##### docker exec -it alphaq_server mysql -u root -p
+##### docker exec -it alphaq_server ./schedule.sh
+##### docker exec -it alphaq_server ./attendance.sh
+##### docker exec -it alphaq_server ./genMoM_1.sh
+##### docker exec -it alphaq_server ./genMoM_2.sh
 (password given is ‘root’)
-##### docker exec alphaq_server mysql create database Minutesofmeeting;
-
+##### docker exec -it alphaq_server mysql create database Minutesofmeeting;
+##### docker exec -it alphaq_server python3 db.py
+##### docker exec -it alphaq_server service apache2 start
+### <Modify the 000-default.conf file from /etc/apache2/sites-available/000-default.conf>
