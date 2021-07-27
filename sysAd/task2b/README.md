@@ -17,6 +17,6 @@
 ##### ErrorLog ${APACHE_LOG_DIR}/moms.local_error.log
 ##### CustomLog ${APACHE_LOG_DIR}/moms.local_access.log combined
 ## 
-#### a2ensite /etc/apache2/sites-available/000-default.conf
+#### a2dissite /etc/apache2/sites-available/000-default.conf
 #### /etc/init.d/apache2 restart
 #### service apache2 reload
