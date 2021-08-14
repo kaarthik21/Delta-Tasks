@@ -4,10 +4,10 @@
 
 #### After starting apache2 and mysql, the MoM table can be viewed from localhost/moms.php
 
-#### chown -R www-data:www-data /var/www/html/moms.php
-#### chown -R www-data:www-data /var/www/html/config.php
-#### chown -R www-data:www-data /var/www/html/cookie.php
-#### chmod -R 755 /var/www/html
+#### chown -R www-data:www-data /var/www/html/moms.local/moms.php
+#### chown -R www-data:www-data /var/www/html/moms.local/config.php
+#### chown -R www-data:www-data /var/www/html/moms.local/cookie.php
+#### chmod -R 755 /var/www/html/moms.local
 #### vim /etc/apache2/sites-available/000-default.conf
 ##
 #### Modify 000-default.conf file by adding these commands        
