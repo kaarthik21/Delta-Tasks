@@ -3,7 +3,7 @@ awk 'BEGIN{
         FS=",";
         } 
 
-FNR==NR{
+NR==FNR{
 # FNR resets to 1 for new file while NR continues
         array_store_lines[$2]=$0;
         # Full line is stored to array with $2 as index-employeeId
@@ -20,7 +20,7 @@ FNR==NR{
 awk 'BEGIN{
         FS=",";
         }
-FNR==NR{
+NR==FNR{
 # FNR resets to 1 for new file while NR continues
         array_store_lines1[$3]=$0;
         # Full line stored to array with $3 as index-phone
