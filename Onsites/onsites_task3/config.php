@@ -7,10 +7,10 @@
 <h2>
 Welcome to NITT login page
 </h2>  
-<label for="uname"><b>Username</b></label>
-<input type="text" placeholder="Enter Username" name="usernamename" minlength="9" maxlength="9" pattern="[1]{1}[0-4]{1}[0]{1}[1]{1}[2]{1}[0][012]{1}[0-9]{2}"  required>
+<label for="username"><b>Username</b></label>
+<input type="text" placeholder="Enter Username" name="username" minlength="9" maxlength="9" pattern="[1]{1}[0-4]{1}[0]{1}[1]{1}[2]{1}[0][012]{1}[0-9]{2}"  required>
 <br>
-<label for="psw"><b>Password</b></label>
+<label for="password"><b>Password</b></label>
 <input type="password" placeholder="Enter Password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
 <br>
 
