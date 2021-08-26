@@ -1,0 +1,13 @@
+loadbalancer2:
+    build: loadbalancer2
+    ports:
+        - "55555:80"
+    links:      
+        - server3
+        - server4  
+
+server3:
+    build: server3
+
+server4:
+    build: server4  
