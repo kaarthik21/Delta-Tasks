@@ -6,4 +6,4 @@ awk -F, -v col=$column 'NR==1{{for(i=1;i<=NF;i++) if($i==col) {print i}}
 }' final_merged.txt 
 
 sed -i "s/$value/$newvalue/" final_merged.txt
-# -i - in place of
+# -i - in place of, s/ - to match and replace strings
