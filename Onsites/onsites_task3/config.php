@@ -4,8 +4,9 @@
 </head>
 <body>
 <form action="#null" method="post">
-
-
+<h2>
+Welcome to NITT login page
+</h2>  
 <label for="uname"><b>Username</b></label>
 <input type="text" placeholder="Enter Username" name="usernamename" pattern="[1]{0,}[0-9]{9}" required>
 <br>
