@@ -74,35 +74,13 @@ setInterval(function() {
         alert("Game over!");
         location.reload();
     }
-    else if (c_top === 435 && c_left >= 146 && c_left <= 155){
+    else if (a_top >= 410 && a_top <= 412 && c_top === 435 && c_left >= 146 && c_left <= 155){
         alert("Game over!");
         location.reload();
     }
     
 }, 1);
 
-
-//hitTest(a, b);
-function hitTest(a, b){
-    var aPos = a.offset();
-    var bPos = b.position();
-
-    var aLeft = aPos.left;
-    var aRight = aPos.left + a.width();
-    var aTop = aPos.top;
-    var aBottom = aPos.top + a.height();
-
-    var bLeft = bPos.left;
-    var bRight = bPos.left + b.width();
-    var bTop = bPos.top;
-    var bBottom = bPos.top + b.height();
-
-    return !( bLeft > aRight
-        || bRight < aLeft
-        || bTop > aBottom
-        || bBottom < aTop
-        );
-}
 
 
 
