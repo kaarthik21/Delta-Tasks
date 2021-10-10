@@ -55,7 +55,7 @@ button{
 
 
 #obstacle_up{
-    background-color: black;
+    background-color: white;
     height:90px;
     width: 100px;
     float: right; 
@@ -66,7 +66,7 @@ button{
 }
 
 #obstacle_down{
-    background-color: black;
+    background-color: white;
     height:90px;
     width: 100px;
     float: right;
