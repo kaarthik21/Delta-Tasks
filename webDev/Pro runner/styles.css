@@ -1,0 +1,61 @@
+body{
+    background-color: black
+}
+
+b{
+    font-size:25px;
+
+}
+
+
+button{
+    background-color:rgb(79, 206, 40);
+    color: white;
+    padding: 8px 13px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+  
+.inside_space{
+    background-color:grey;
+    height: 300px;
+    margin-top: 60px;
+    z-index: -1;
+    width: 600px; 
+    
+}
+
+#box{
+    background-color: rgba(7, 55, 94, 0.897);
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
+    position: relative;
+}
+
+
+#obstacle_up{
+    background-color: black;
+    height:90px;
+    width: 100px;
+    float: right; 
+    right: 48px; /*605*/
+    position: absolute;
+    /*position: fixed;*/
+    top: 100px;
+}
+
+#obstacle_down{
+    background-color: black;
+    height:90px;
+    width: 100px;
+    float: right;
+    right: 48px;
+    /*position: fixed;*/
+    position: absolute;
+    top: 435px;
+}
+
