@@ -1,0 +1,48 @@
+*{
+    /* Universal selector */
+    padding:0;
+    margin:10;
+    box-sizing: border-box;
+}
+
+h1{
+    background:linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)
+    /* All colors */
+}
+    body{
+    background:rgb(100, 100, 100); 
+}
+
+.gameboard,.cell{
+    position:absolute;
+}
+
+.gameboard:hover,.cell:hover{
+    /*highlight*/
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+.cell{
+    border:1px solid black;
+}
+
+#score{
+    size:0px;
+}
+
+#timer{
+    margin:0;
+}
+
+#pattern_board{
+    top:15%;
+    left:45%;
+}
+
+#player_board{
+    top:45%;
+    left:40%;
+    transform:translate(-50%, -50%);
+}
