@@ -3,3 +3,5 @@
 ###
 ### For viewing the desktop version: localhost:8000
 ### For seeing the mobile version: localhost:55555
+#### (docker run - runs only 1 container at a time)
+#### (docker-compose runs multiple containers at once)
